@@ -10,15 +10,15 @@ and see what seems fit best. This web app will help you find the appropriate rea
 of kunyomi, onyomi, or even nanori readings of a combination of kanjis.  
 
 
-##### Features
-##### Search kanji
+#### Features
+#### Search kanji
 Pretty self explanatory, you can enter the kanjis in the search bar and see each of their meanings, and readings
-##### Combine kanji readings
+#### Combine kanji readings
 After searching the kanjis, you can combine their readings based on your choice, (either kunyomi, onyomi, or nanori) 
 and show the list of the combinations. Note that this app will only combine the two first letters. Its also by no means accurate as japanaese name readings is
 more complex and can consist of a combination of different readings (e.g kunyomi-onyomi), so this tool will just help you visualize the combination, not
 necessarily telling you how the name is read
-##### How
+#### How
 This flask app is build based on KANJIDIC2, an open source japanese english kanji dictionary made by Jim Breen, link 
 to their website here http://www.edrdg.org/wiki/index.php/KANJIDIC_Project. When you entered the kanji to searchbar the back-end will iterate over the letters
 and sending queries to sql. And then it give back the complete information about the letter (readings, meanings), and render it on the web page
@@ -36,7 +36,7 @@ AJAX call to `app.py` and display the results based on mode you selected
 `Kanji Database/kanji.db` This the sqlite database file that is based on KANJIDIC2 and contain 5 tables for kanjis, meanings, and all three different readings 
 
 
-####Things that should be Improved
+#### Things that should be Improved
 Unfortunately because it is using sqlite as a database, it can only be used and hosted on local machine. Deploying this app to Heroku requires PostgresSQL
 with limited size if using free account. However migrating from sqlite to PostgresSQL requires pgloader which is only available in Linux and WSL, and I still
 dont know how to use it as I am using windows. The database itself unfortunately is not very efficient in memory as its using 4 tables for all the different
