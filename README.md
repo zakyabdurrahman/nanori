@@ -34,7 +34,8 @@ folder.
 request with parameter to `app.py`  
   
 `template/search.html` This is a web page that will display your search result in the webpage and contain the javascript application to combine kanji readings by sending
-AJAX call to `app.py` and display the results based on mode you selected
+AJAX call to `app.py` and display the results based on mode you selected  
+  
 `Kanji Database/kanji.db` This the sqlite database file that is based on KANJIDIC2 and contain 5 tables for kanjis, meanings, and all three different readings 
 
 
