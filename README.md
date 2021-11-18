@@ -29,8 +29,10 @@ database, CSS and HTML formatting and positioning, setting up virtual environmen
 #### Files/program structure
 `app.py` This is the back end flask application that will handle all requests from the web browser. You can run this app locally by running `flask run` on the repo
 folder.  
+  
 `template/main.html` This is the first web page you will see, which only include the searchbar. When you entered text into the searchbar and submit, it will send get
 request with parameter to `app.py`  
+  
 `template/search.html` This is a web page that will display your search result in the webpage and contain the javascript application to combine kanji readings by sending
 AJAX call to `app.py` and display the results based on mode you selected
 `Kanji Database/kanji.db` This the sqlite database file that is based on KANJIDIC2 and contain 5 tables for kanjis, meanings, and all three different readings 
