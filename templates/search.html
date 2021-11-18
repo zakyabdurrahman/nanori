@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block navlink %}
+<li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Search Name</a>
+  </li>
+ 
+{% endblock %}
+
+{% block body %}
+
+<div class="searchbar">
+  <h3><b>Search Japanese Name</b></h3>
+  <form class="formg" action="/search" method="get" >
+      <input class="sinput" name="k" type="text" placeholder="enter kanji">
+      <input type="submit" value="Search">
+  </form>
+</div>
+<div class="combine" >
+  <h3>Combine it</h3>
+  
+    <select id="mode">
+      <option disabled selected value="">mixer mode</option>
+      <option value="onyomi">Onyomi</option>
+      <option value="kunyomi">Kunyomi</option>
+      <option value="nanori">Nanori</option>
+      <option value="kun-on">Kun-On</option>
+      <option value="on-kun">On-Kun</option>
+    </select>
+    <button class="btn btn-secondary" id="submitmixer">Combine Readings</button>
+    <hr>
+    <div class="textc" id="combineDisplay">
+
+    </div>
+  
+</div>
+<div class="kanjiresult">
+    <div class="kanjiheader">
+      <h2>Kanji Results of {{kanjiInput}}</h1>
+    </div>
+    <hr>
+    {% if kanjiList %}
+    {% for kanji in kanjiList%}
+    <div class="kanjibox">
+      <h1 class="literal">{{kanji.literal}}</h1>
+    
+      <div class="kanjidetails">
+        <p><b>Meanings :</b> {{kanji.meanings}}<br><b>Onyomi : {{kanji.onyomis}}</b><br><b>Kunyomi : {{kanji.kunyomis}}</b><br><b>Nanori : {{kanji.nanoris}}</b></p>
+      </div>
+    </div>
+    <hr>
+    {% endfor %}
+    {% endif %}
+    <p id="legacy" hidden>{{kanjiInput}}</p>
+</div>
+
+
+{% endblock %}

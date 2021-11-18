@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block navlink %}
+<li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Search Name</a>
+  </li>
+  
+{% endblock %}
+
+{% block body %}
+
+<div class="searchbar">
+  <h3><b>Search Japanese Kanji</b></h3>
+  <form class="formg" action="/search" method="get" >
+      <input class="sinput" name="k" type="text" placeholder="enter kanji">
+      <input type="submit" class="btn btn-secondary" value="Search">
+  </form>
+</div>
+<div class="combine">
+
+</div>
+<div class="kanjiresult">
+
+</div>
+{% endblock %}

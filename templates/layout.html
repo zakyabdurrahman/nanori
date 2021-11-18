@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nanori</title>
+        <script src="static/bakmi.js" defer></script> 
+        <link rel="stylesheet" href="static/bootstrap.css">
+        <link rel="stylesheet" href="static/stylesheet.css">
+        <script src="static/jquery-3.6.0.min.js" defer></script>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Nanori</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  {% block navlink %}{% endblock %}
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <body>
+    {% block body %}{% endblock %}
+    </body>
+</html>

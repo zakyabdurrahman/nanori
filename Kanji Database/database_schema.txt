@@ -1,0 +1,5 @@
+CREATE TABLE kanjis (id INTEGER NOT NULL, literal TEXT NOT NULL, searchs INTEGER DEFAULT 0 NOT NULL, PRIMARY KEY(id));
+CREATE TABLE nanoris (kanji_id INTEGER NOT NULL, nanori TEXT NOT NULL, FOREIGN KEY (kanji_id) REFERENCES kanjis (id));
+CREATE TABLE meanings (kanji_id INTEGER NOT NULL, meaning TEXT NOT NULL, FOREIGN KEY (kanji_id) REFERENCES kanjis (id));
+CREATE TABLE kunyomis (kanji_id INTEGER NOT NULL, kunyomi TEXT NOT NULL, FOREIGN KEY (kanji_id) REFERENCES kanjis (id));
+CREATE TABLE onyomis (kanji_id INTEGER NOT NULL, onyomi TEXT NOT NULL, FOREIGN KEY (kanji_id) REFERENCES kanjis (id));
