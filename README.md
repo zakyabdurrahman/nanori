@@ -43,6 +43,7 @@ AJAX call to `app.py` and display the results based on mode you selected
 Unfortunately because it is using sqlite as a database, it can only be used and hosted on local machine. Deploying this app to Heroku requires PostgresSQL
 with limited size if using free account. However migrating from sqlite to PostgresSQL requires pgloader which is only available in Linux and WSL, and I still
 dont know how to use it as I am using windows. The database itself unfortunately is not very efficient in memory as its using 4 tables for all the different
-readings, meanings and their respective kanji primary key
+readings, meanings and their respective kanji primary key  
+
 The usefulness of this application is also very limited because it just generate combinations instead of just using name dictionary, which contains hundreds
 of thousands of japanese names
