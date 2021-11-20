@@ -4,9 +4,7 @@ body
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-    font-size: 18px;
-}
+
 
 .searchbar
 {
@@ -68,7 +66,7 @@ h1{
 .literal
 {
     display: inline;
-    
+    font-family: 'Shippori Antique B1', sans-serif;
     float: left;
 }
 
@@ -80,6 +78,7 @@ h1{
     word-wrap: break-word;
     margin-left: 25px;
     height: 75px;
+    font-size: 18px;
 }
 .kanjibox
 {
@@ -97,3 +96,7 @@ select
     margin: 30px;
 }
 
+#combineDisplay{
+    font-family: 'Shippori Antique B1', sans-serif;
+    
+}

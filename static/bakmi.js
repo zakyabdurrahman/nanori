@@ -11,7 +11,7 @@ submit.addEventListener('click', function(){
             display = ""
             message.forEach(element => {
                 
-                display += "<p>"+element+"</p>";
+                display += "<p><b>"+element+"</b></p>";
                 console.log(display);
                 
             });
