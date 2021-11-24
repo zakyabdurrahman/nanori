@@ -113,6 +113,8 @@ select
 
 .nameresult div{
     display: inline-block;
+    width: calc(100%/4);
+    text-align: center;
     margin: 30px;
 }
 .nameresult p{

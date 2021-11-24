@@ -24,13 +24,14 @@
     {% if name %}
         <h2>Search Result for {{name}}:</h1>
         <hr>
-        
+        {% for item in nameList %}
         <div>
-            <h4><b>しのはら</b></h4>
-            <p>Given Name</p>
+            <h4><b>{{item["jp_reading"]}}</b></h4>
+            <p>{{item["trans"]}}</p>
+            <p>{{item["type"]}}</p>
             <hr>
         </div>
-        
+        {% endfor %}
         
         
     {% endif %}

@@ -17,7 +17,23 @@ def name():
   name = request.args.get('ni')
   if not name:
     return render_template('name.html')
-  return render_template('name.html', name = name)
+  con = sqlite3.connect('Kanji Database/names.db')
+  db = con.cursor()
+  names = db.execute("SELECT id, reading, trans FROM names WHERE name = ?", (name,))
+  names = names.fetchall()
+  namesList = []
+  for item in names:
+    thedict = {}
+    thedict["jp_reading"]= item[1]
+    thedict["trans"] = item[2]
+    k_id = item[0]
+    type = db.execute("SELECT type FROM types WHERE id IN (SELECT type_id FROM name_type WHERE name_id = ?)", (k_id,))
+    type = type.fetchone()
+    thedict["type"] = type[0]
+    namesList.append(thedict)
+  print(namesList)
+  return render_template('name.html', name = name, nameList = namesList)
+
 @app.route('/search')
 def search():
    #create db 
