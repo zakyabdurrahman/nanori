@@ -100,3 +100,21 @@ select
     font-family: 'Shippori Antique B1', sans-serif;
     
 }
+
+.nameresult h4{
+    font-family: 'Shippori Antique B1', sans-serif;
+    
+}
+
+.nameresult{
+    
+    margin: 15px;
+}
+
+.nameresult div{
+    display: inline-block;
+    margin: 30px;
+}
+.nameresult p{
+    font-size: 18px;
+}

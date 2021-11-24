@@ -12,6 +12,12 @@ def index():
   return render_template('main.html')
 #display kanjis with readings meanings etc
 
+@app.route('/name')
+def name():
+  name = request.args.get('ni')
+  if not name:
+    return render_template('name.html')
+  return render_template('name.html', name = name)
 @app.route('/search')
 def search():
    #create db 

@@ -2,15 +2,19 @@
 
 {% block navlink %}
 <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="/">Search Name</a>
+    <a class="nav-link active" aria-current="page" href="/">Search Kanji</a>
+    
   </li>
+  <li>
+    <a class="nav-link" aria-current="page" href="/name">Search Name</a>
+  </li> 
   
 {% endblock %}
 
 {% block body %}
 
 <div class="searchbar">
-  <h3><b>Enter Japanese Name</b></h3>
+  <h3><b>Enter Kanji to Search</b></h3>
   <form class="formg" action="/search" method="get" >
       <input class="sinput" name="k" type="text" placeholder="enter kanji">
       <input type="submit" class="btn btn-secondary" value="Search">
