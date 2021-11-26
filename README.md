@@ -1,5 +1,8 @@
 # Nanori: A tool to make reading Japanese name easier
-#### Video Demo:
+#### Preview:
+![1](https://i.imgur.com/mF8wjlp.png)
+　　
+![2](https://i.imgur.com/nnkDrPn.png)
 #### Description:
 Japanese names are written using kanji or chinese characters. Reading Japanese names was always a difficult thing to do, 
 even for Japanese people. a kanji can have multiple readings and there is thousands of kanjis, not to mention that names
@@ -8,6 +11,8 @@ in the internet like jisho.org, but unfortunately often their readings are not c
 Even after finding the kanji entries in dictionary it kinda inconvenient to try all the combinations of readings in our own head
 and see what seems fit best. This web app will help you find the appropriate reading of a name by showing you the combinations
 of kunyomi, onyomi, or even nanori readings of a combination of kanjis.  
+  
+You can also search the name on the proper Japanese names dictionary which include over 700,000 entries on all kinds of Japanese names
 
 
 #### Features
