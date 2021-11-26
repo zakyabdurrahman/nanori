@@ -11,6 +11,8 @@ in the internet like jisho.org, but unfortunately often their readings are not c
 Even after finding the kanji entries in dictionary it kinda inconvenient to try all the combinations of readings in our own head
 and see what seems fit best. This web app will help you find the appropriate reading of a name by showing you the combinations
 of kunyomi, onyomi, or even nanori readings of a combination of kanjis.  
+  
+You can also search the name on the proper Japanese names dictionary which include over 700,000 entries on all kinds of Japanese names
 
 
 #### Features
